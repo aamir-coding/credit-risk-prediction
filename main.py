@@ -38,8 +38,8 @@ with col3:
 
 st.divider()
 
-# 4. Calculation & Action Section
-action_col1, action_col2 = st.columns([3, 1], vertical_alignment="bottom")
+# 4. Calculation & Action Section (Removed vertical_alignment to fix the TypeError)
+action_col1, action_col2 = st.columns([3, 1])
 
 with action_col1:
     # Calculate Loan to Income Ratio and display it beautifully using st.metric
@@ -47,7 +47,8 @@ with action_col1:
     st.metric(label="Calculated Loan-to-Income (LTI) Ratio", value=f"{loan_to_income_ratio:.2f}")
 
 with action_col2:
-    # Use a primary button style that spans the column width
+    # Adding a blank space to manually push the button down to align with the metric
+    st.write("") 
     calculate_btn = st.button('Assess Credit Risk 🚀', type="primary", use_container_width=True)
 
 # 5. Results Section
