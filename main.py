@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # 2. Header Section
-st.title("📊 Lauki Finance: Credit Risk Dashboard")
+st.title("📊 Classification Project: Credit Risk Dashboard")
 st.markdown("Evaluate applicant creditworthiness using our advanced risk modeling system. Fill out the details below to generate a real-time risk assessment.")
 st.divider()
 
