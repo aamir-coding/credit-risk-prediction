@@ -3,7 +3,7 @@ from prediction_helper import predict  # Ensure this is correctly linked to your
 
 # 1. Page Configuration
 st.set_page_config(
-    page_title="Lauki Finance: Credit Risk Modelling", 
+    page_title="Classification Project: Credit Risk Modelling", 
     page_icon="📊", 
     layout="wide" # Uses the full width of the screen for a dashboard feel
 )
